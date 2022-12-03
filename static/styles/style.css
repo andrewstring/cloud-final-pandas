@@ -63,6 +63,7 @@
 
 .upload form {
     display: inline-block;
+    text-align: center;
 }
 
 .upload form label {
@@ -70,9 +71,41 @@
     margin-bottom: 20px;
 }
 
-.upload form input {
+.upload form input, .upload form button, .upload form a {
     display: block;
-    margin-bottom: 15px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    text-decoration: none;
+    color: black;
+}
+
+.upload form .input-file {
+    margin-bottom: 0px;
+    padding: 30px;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
+}
+.upload form .input-file:hover {
+    background-color: grey;
+}
+/* Hide upload file button */
+::-webkit-file-upload-button {
+   display: none;
+}
+::file-selector-button {
+  display: none;
 }
 
 table, th, td {

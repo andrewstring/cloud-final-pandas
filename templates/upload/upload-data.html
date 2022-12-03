@@ -10,14 +10,14 @@
 {% block content %}
 <div class="upload">
     <form method="post" enctype="multipart/form-data">
-        <label for="household">Household CSV:</label>
-        <input type="file" name="household" required>
+        <label for="household">Drag Household CSV Into Square Below:</label>
+        <input class="input-file" type="file" title=" " name="household" required>
         <br>
-        <label for="product">Product CSV:</label>
-        <input type="file" name="product" required>
+        <label for="product">Drag Product CSV Into Square Below:</label>
+        <input class="input-file" type="file" name="product" required>
         <br>
-        <label for="transaction">Transaction CSV:</label>
-        <input type="file" name="transaction" required>
+        <label for="transaction">Drag Transaction CSV Into Square Below:</label>
+        <input class="input-file" type="file" name="transaction" required>
         <br>
         <label for="houseNum">HouseNum to Pull:</label>
         <input type="text" name="houseNum" required>
