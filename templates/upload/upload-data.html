@@ -2,6 +2,9 @@
 {% block title %}Upload{% endblock %}
 {% block head %}
     {{ super() }}
+    <script>
+    alert("NOTE: The server has a file limit, so if you get 413 error, you need to use smaller files");
+    </script>
 {% endblock %}
 {% block header_title %}Upload Data{% endblock %}
 {% block header %}
