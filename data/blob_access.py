@@ -27,7 +27,6 @@ def get_joined_df(pd_df_arr):
     copy=True,
     )
 
-def get_table(df):
     
 
 # def get_combined_df(sqlContext, sparkSchemas, urls):

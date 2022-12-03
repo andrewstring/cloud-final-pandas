@@ -101,4 +101,4 @@ def display_uploaded():
     return render_template("/upload/display-uploaded.html")
 
 if __name__ == "__main__":
-	app.run()
+    app.run()
