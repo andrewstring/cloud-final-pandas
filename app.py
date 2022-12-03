@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
-from data.blob_access import run
+from data.blob_access import run, run_files
 from users.users import user_add, user_login
 
 import os
@@ -90,17 +90,27 @@ def upload_data():
         path = os.path.join(os.getcwd(), "data/uploads/", filename)
         transaction.save(path)
 
+        houseNum = request.form["houseNum"]
+        print(houseNum)
+
         return redirect(url_for('display_uploaded', household=household.filename,
-        product=product.filename, transaction=transaction.filename))
+        product=product.filename, transaction=transaction.filename, houseNum=houseNum))
             
     return render_template("/upload/upload-data.html")
 
 @app.route("/display-uploaded")
 def display_uploaded():
-    print(request.args['household'])
-    print(request.args['product'])
-    print(request.args['transaction'])
-    return render_template("/upload/display-uploaded.html")
+    # print(request.args['household'])
+    # print(request.args['product'])
+    # print(request.args['transaction'])
+    # return render_template("/upload/display-uploaded.html")
+    files = [
+        request.args['household'],
+        request.args['product'],
+        request.args['transaction'],
+    ]
+    elements = run_files(files, int(request.args['houseNum']))
+    return render_template("/display/display-table.html", elem=elements, num=request.args.get("num"))
 
 if __name__ == "__main__":
     app.run()
