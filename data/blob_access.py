@@ -1,69 +1,87 @@
 import pandas as pd
-from pyspark.sql import SparkSession, SQLContext
-from pyspark.sql.functions import col
-from pyspark.sql.types import *
-from pyspark import SparkContext
 import os
 
 
-def get_pd_df(url):
+def get_pd_df(url, schema):
     pd.set_option('display.max_columns', None)
-    pd_df = pd.read_csv(url)
+    pd_df = pd.read_csv(url, header=0, names=schema)
+    print(pd_df.head())
     return pd_df
 
-def get_df(sqlContext, sparkSchema, url):
-    pd_df = get_pd_df(url)
-    df = sqlContext.createDataFrame(pd_df, schema=sparkSchema)
-    return df
+def get_three_df(urls, schemas):
+    three_df = []
+    for index, url in enumerate(urls):
+        three_df.append(get_pd_df(url, schemas[index]))
+    return three_df
 
-def get_combined_df(sqlContext, sparkSchemas, urls):
-    household_pd_df = get_pd_df(urls[0])
-    products_pd_df = get_pd_df(urls[1])#.head(5000)
+def get_joined_df(pd_df_arr):
+    return pd.concat(
+    pd_df_arr,
+    axis=0,
+    join="outer",
+    ignore_index=False,
+    keys=None,
+    levels=None,
+    names=None,
+    verify_integrity=False,
+    copy=True,
+    )
 
-    # get 10k entries from dataframe
-    transactions_pd_df = get_pd_df(urls[2])#.head(10000)
+def get_table(df):
+    
 
-    household_df = sqlContext.createDataFrame(household_pd_df, schema=sparkSchemas[0])
-    products_df = sqlContext.createDataFrame(products_pd_df, schema=sparkSchemas[1])
-    transactions_df = sqlContext.createDataFrame(transactions_pd_df, schema=sparkSchemas[2])
-    return [household_df, products_df, transactions_df]
+# def get_combined_df(sqlContext, sparkSchemas, urls):
+#     household_pd_df = get_pd_df(urls[0])
+#     products_pd_df = get_pd_df(urls[1])#.head(5000)
 
-def run(sparkContext, num):
-    sqlContext = SQLContext(sparkContext)
+#     # get 10k entries from dataframe
+#     transactions_pd_df = get_pd_df(urls[2])#.head(10000)
 
-    householdSchema = StructType([
-        StructField("HouseholdNum", IntegerType(), True),
-        StructField("Loyalty", StringType(), True),
-        StructField("AgeRange", StringType(), True),
-        StructField("Marital", StringType(), True),
-        StructField("IncomeRange", StringType(), True),
-        StructField("Homeowner", StringType(), True),
-        StructField("Composition", StringType(), True),
-        StructField("Size", StringType(), True),
-        StructField("Children", StringType(), True)
-    ])
+#     household_df = sqlContext.createDataFrame(household_pd_df, schema=sparkSchemas[0])
+#     products_df = sqlContext.createDataFrame(products_pd_df, schema=sparkSchemas[1])
+#     transactions_df = sqlContext.createDataFrame(transactions_pd_df, schema=sparkSchemas[2])
+#     return [household_df, products_df, transactions_df]
 
-    productsSchema = StructType([
-        StructField("ProductNum", IntegerType(), True),
-        StructField("Department", StringType(), True),
-        StructField("Commodity", StringType(), True),
-        StructField("BrandType", StringType(), True),
-        StructField("Organic", StringType(), True)
-    ])
+def run():
 
-    transactionsSchema = StructType([
-        StructField("BasketNum", IntegerType(), True),
-        StructField("HouseholdNum", IntegerType(), True),
-        StructField("Date", StringType(), True),
-        StructField("ProductNum", IntegerType(), True),
-        StructField("Spend", FloatType(), True),
-        StructField("Units", IntegerType(), True),
-        StructField("StoreRegion", StringType(), True),
-        StructField("WeekNum", IntegerType(), True),
-        StructField("Year", IntegerType(), True)
-    ])
+    # householdSchema = StructType([
+    #     StructField("HouseholdNum", IntegerType(), True),
+    #     StructField("Loyalty", StringType(), True),
+    #     StructField("AgeRange", StringType(), True),
+    #     StructField("Marital", StringType(), True),
+    #     StructField("IncomeRange", StringType(), True),
+    #     StructField("Homeowner", StringType(), True),
+    #     StructField("Composition", StringType(), True),
+    #     StructField("Size", StringType(), True),
+    #     StructField("Children", StringType(), True)
+    # ])
+    
 
-    sparkSchemas = [householdSchema, productsSchema, transactionsSchema]
+    # productsSchema = StructType([
+    #     StructField("ProductNum", IntegerType(), True),
+    #     StructField("Department", StringType(), True),
+    #     StructField("Commodity", StringType(), True),
+    #     StructField("BrandType", StringType(), True),
+    #     StructField("Organic", StringType(), True)
+    # ])
+
+    
+
+    # transactionsSchema = StructType([
+    #     StructField("BasketNum", IntegerType(), True),
+    #     StructField("HouseholdNum", IntegerType(), True),
+    #     StructField("Date", StringType(), True),
+    #     StructField("ProductNum", IntegerType(), True),
+    #     StructField("Spend", FloatType(), True),
+    #     StructField("Units", IntegerType(), True),
+    #     StructField("StoreRegion", StringType(), True),
+    #     StructField("WeekNum", IntegerType(), True),
+    #     StructField("Year", IntegerType(), True)
+    # ])
+
+    
+
+    # sparkSchemas = [householdSchema, productsSchema, transactionsSchema]
 
     urls = [
         "https://datastorage192.blob.core.windows.net/newcontainer/"\
@@ -81,83 +99,120 @@ def run(sparkContext, num):
         # "q2QC86j%2BIGJxPPEizlrM1IRtVoUdL%2B3WAoE0Kc%3D"
     ]
 
-    print("TEST" + os.path.join(os.path.dirname(__file__), "csv/400_households.csv"))
-
-    combined_df = get_combined_df(sqlContext, sparkSchemas, urls)
-    #combined_df[2].show()
-
-    productNumJoin_df = combined_df[2].join(combined_df[1], combined_df[2].ProductNum == combined_df[1].ProductNum)
-    full_df = productNumJoin_df.join(combined_df[0], productNumJoin_df.HouseholdNum == combined_df[0].HouseholdNum).filter(combined_df[0].HouseholdNum == num).select(combined_df[0].HouseholdNum,
-    "BasketNum", "Date", combined_df[1].ProductNum, "Department", "Commodity", "Spend", "Units", "StoreRegion", "WeekNum", "Year", "Loyalty",
-    "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition", "Size", "Children")
-
-
-    full_sorted_df = full_df.sort("BasketNum", "Date",
-    combined_df[1].ProductNum, "Department", "Commodity").head(5000)
-
-    return full_sorted_df
-
-def run_file(sparkContext, filenames, num):
-    sqlContext = SQLContext(sparkContext)
-
-    householdSchema = StructType([
-        StructField("HouseholdNum", IntegerType(), True),
-        StructField("Loyalty", StringType(), True),
-        StructField("AgeRange", StringType(), True),
-        StructField("Marital", StringType(), True),
-        StructField("IncomeRange", StringType(), True),
-        StructField("Homeowner", StringType(), True),
-        StructField("Composition", StringType(), True),
-        StructField("Size", StringType(), True),
-        StructField("Children", StringType(), True)
-    ])
-
-    productsSchema = StructType([
-        StructField("ProductNum", IntegerType(), True),
-        StructField("Department", StringType(), True),
-        StructField("Commodity", StringType(), True),
-        StructField("BrandType", StringType(), True),
-        StructField("Organic", StringType(), True)
-    ])
-
-    transactionsSchema = StructType([
-        StructField("BasketNum", IntegerType(), True),
-        StructField("HouseholdNum", IntegerType(), True),
-        StructField("Date", StringType(), True),
-        StructField("ProductNum", IntegerType(), True),
-        StructField("Spend", FloatType(), True),
-        StructField("Units", IntegerType(), True),
-        StructField("StoreRegion", StringType(), True),
-        StructField("WeekNum", IntegerType(), True),
-        StructField("Year", IntegerType(), True)
-    ])
-
-    sparkSchemas = [householdSchema, productsSchema, transactionsSchema]
-
-    urls = [
-        os.path.join(os.getcwd(), "uploads/" + filenames[0]),
-        os.path.join(os.getcwd(), "uploads/" + filenames[1]),
-        os.path.join(os.getcwd(), "uploads/" + filenames[2])
+    householdSchema = [
+        "HouseholdNum",
+        "Loyalty",
+        "AgeRange",
+        "Marital",
+        "IncomeRange",
+        "Homeowner",
+        "Composition",
+        "Size",
+        "Children"
     ]
 
-    print("TEST: " + os.getcwd(), "uploads/" + filenames[0])
+    productSchema = [
+        "ProductNum",
+        "Department",
+        "Commodity",
+        "BrandType",
+        "Organic"
+    ]
 
-    combined_df = get_combined_df(sqlContext, sparkSchemas, urls)
+    transactionSchema = [
+        "BasketNum",
+        "HouseholdNum",
+        "Date",
+        "ProductNum",
+        "Spend",
+        "Units",
+        "StoreRegion",
+        "WeekNum",
+        "Year"
+    ]
+
+    schemas = [householdSchema, productSchema, transactionSchema]
+
+    joined_df = get_joined_df(get_three_df(urls, schemas))
+
+    print(joined_df)
+    # combined_df = get_combined_df(sqlContext, sparkSchemas, urls)
     #combined_df[2].show()
 
-    productNumJoin_df = combined_df[2].join(combined_df[1], combined_df[2].ProductNum == combined_df[1].ProductNum)
-    full_df = productNumJoin_df.join(combined_df[0], productNumJoin_df.HouseholdNum == combined_df[0].HouseholdNum).filter(combined_df[0].HouseholdNum == num).select(combined_df[0].HouseholdNum,
-    "BasketNum", "Date", combined_df[1].ProductNum, "Department", "Commodity", "Spend", "Units", "StoreRegion", "WeekNum", "Year", "Loyalty",
-    "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition", "Size", "Children")
+    # productNumJoin_df = combined_df[2].join(combined_df[1], combined_df[2].ProductNum == combined_df[1].ProductNum)
+    # full_df = productNumJoin_df.join(combined_df[0], productNumJoin_df.HouseholdNum == combined_df[0].HouseholdNum).filter(combined_df[0].HouseholdNum == num).select(combined_df[0].HouseholdNum,
+    # "BasketNum", "Date", combined_df[1].ProductNum, "Department", "Commodity", "Spend", "Units", "StoreRegion", "WeekNum", "Year", "Loyalty",
+    # "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition", "Size", "Children")
 
 
-    full_sorted_df = full_df.sort("BasketNum", "Date",
-    combined_df[1].ProductNum, "Department", "Commodity").head(100)
+    # full_sorted_df = full_df.sort("BasketNum", "Date",
+    # combined_df[1].ProductNum, "Department", "Commodity").head(5000)
 
-    return full_sorted_df
+    # return full_sorted_df
+
+# def run_file(sparkContext, filenames, num):
+#     sqlContext = SQLContext(sparkContext)
+
+#     householdSchema = StructType([
+#         StructField("HouseholdNum", IntegerType(), True),
+#         StructField("Loyalty", StringType(), True),
+#         StructField("AgeRange", StringType(), True),
+#         StructField("Marital", StringType(), True),
+#         StructField("IncomeRange", StringType(), True),
+#         StructField("Homeowner", StringType(), True),
+#         StructField("Composition", StringType(), True),
+#         StructField("Size", StringType(), True),
+#         StructField("Children", StringType(), True)
+#     ])
+
+#     productsSchema = StructType([
+#         StructField("ProductNum", IntegerType(), True),
+#         StructField("Department", StringType(), True),
+#         StructField("Commodity", StringType(), True),
+#         StructField("BrandType", StringType(), True),
+#         StructField("Organic", StringType(), True)
+#     ])
+
+#     transactionsSchema = StructType([
+#         StructField("BasketNum", IntegerType(), True),
+#         StructField("HouseholdNum", IntegerType(), True),
+#         StructField("Date", StringType(), True),
+#         StructField("ProductNum", IntegerType(), True),
+#         StructField("Spend", FloatType(), True),
+#         StructField("Units", IntegerType(), True),
+#         StructField("StoreRegion", StringType(), True),
+#         StructField("WeekNum", IntegerType(), True),
+#         StructField("Year", IntegerType(), True)
+#     ])
+
+#     sparkSchemas = [householdSchema, productsSchema, transactionsSchema]
+
+#     urls = [
+#         os.path.join(os.getcwd(), "uploads/" + filenames[0]),
+#         os.path.join(os.getcwd(), "uploads/" + filenames[1]),
+#         os.path.join(os.getcwd(), "uploads/" + filenames[2])
+#     ]
+
+#     print("TEST: " + os.getcwd(), "uploads/" + filenames[0])
+
+#     combined_df = get_combined_df(sqlContext, sparkSchemas, urls)
+#     #combined_df[2].show()
+
+#     productNumJoin_df = combined_df[2].join(combined_df[1], combined_df[2].ProductNum == combined_df[1].ProductNum)
+#     full_df = productNumJoin_df.join(combined_df[0], productNumJoin_df.HouseholdNum == combined_df[0].HouseholdNum).filter(combined_df[0].HouseholdNum == num).select(combined_df[0].HouseholdNum,
+#     "BasketNum", "Date", combined_df[1].ProductNum, "Department", "Commodity", "Spend", "Units", "StoreRegion", "WeekNum", "Year", "Loyalty",
+#     "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition", "Size", "Children")
+
+
+#     full_sorted_df = full_df.sort("BasketNum", "Date",
+#     combined_df[1].ProductNum, "Department", "Commodity").head(100)
+
+#     return full_sorted_df
 
 
 if __name__ == "__main__":
-    sparkContext = SparkContext.getOrCreate()
-    combined = run_file(sparkContext, ["households.csv", "products.csv", "transactions.csv"], 1600)
-    print(combined[0:10])
+    # sparkContext = SparkContext.getOrCreate()
+    # combined = run_file(sparkContext, ["households.csv", "products.csv", "transactions.csv"], 1600)
+    # print(combined[0:10])
+
+    run()

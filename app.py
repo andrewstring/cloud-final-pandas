@@ -1,20 +1,17 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 from data.blob_access import run
 from users.users import user_add, user_login
-from pyspark import SparkContext
 
 import os
 from werkzeug.utils import secure_filename
 UPLOAD_FOLDER = "/data/uploads"
 ALLOWED_EXTENSIONS = {'csv'}
 
-from pyspark import SparkContext
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'abcdefg'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-sparkContext = SparkContext.getOrCreate()
 
 @app.route("/")
 def entry_point():
