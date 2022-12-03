@@ -5,7 +5,7 @@ import os
 def get_pd_df(url, schema):
     pd.set_option('display.max_columns', None)
     pd_df = pd.read_csv(url, header=0, names=schema)
-    print(pd_df.head())
+    # print(pd_df.head())
     return pd_df
 
 def get_three_df(urls, schemas):
@@ -133,8 +133,14 @@ def run():
     schemas = [householdSchema, productSchema, transactionSchema]
 
     joined_df = get_joined_df(get_three_df(urls, schemas))
+    joined_df["HouseholdNum"] = pd.to_numeric(joined_df["HouseholdNum"])
+    filtered_df = joined_df[(joined_df.HouseholdNum == 10)]
+    table = filtered_df[["HouseholdNum","BasketNum","Date","ProductNum","Department","Commodity","Spend","Units",
+    "StoreRegion", "WeekNum", "Year", "Loyalty", "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition",
+    "Size", "Children"]]
 
-    print(joined_df)
+    print(table)
+    return table.head(5000).values.tolist()
     # combined_df = get_combined_df(sqlContext, sparkSchemas, urls)
     #combined_df[2].show()
 
