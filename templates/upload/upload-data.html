@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Upload{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block header_title %}Upload Data{% endblock %}
+{% block header %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="upload">
+    <form method="post" enctype="multipart/form-data">
+        <label for="household">Household CSV:</label>
+        <input type="file" name="household" required>
+        <br>
+        <label for="product">Product CSV:</label>
+        <input type="file" name="product" required>
+        <br>
+        <label for="transaction">Transaction CSV:</label>
+        <input type="file" name="transaction" required>
+        <button type="submit">Submit</button>
+        <a href="/">Back to Selection</a>
+    </form>
+</div>
+{% endblock %}

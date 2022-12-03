@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block header_title %}Login to Your Account{% endblock %}
+{% block header %}
+
+{{ super() }}
+{% if res == 0 %}
+<h1>User does not exist, try again</h1>
+{% elif res == 1 %}
+<h1>Incorrect password, try again</h1>
+{% else %}
+{% endif %}
+
+{% endblock %}
+{% block content %}
+<div class="selection">
+    <div class="auth-form">
+        <form method="post">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter username"
+            value="{{ request.form['username'] }}" required></input>
+            <br>
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Enter password"
+            value="{{ request.form['password'] }}" required></input>
+            <br>
+            <button type="login">Login</button>
+            <a href="/">Back to Main</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

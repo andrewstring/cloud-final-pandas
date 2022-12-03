@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Household {{ num }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block header_title %}Pull for Household {{ num }}{% endblock %}
+{% block header %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<table>
+    <tr>
+        <th>HouseholdNum</th>
+        <th>BasketNum</th>
+        <th>Date</th>
+        <th>ProductNum</th>
+        <th>Department</th>
+        <th>Commodity</th>
+        <th>Spend</th>
+        <th>Units</th>
+        <th>StoreRegion</th>
+        <th>WeekNum</th>
+        <th>Year</th>
+        <th>Loyalty</th>
+        <th>AgeRange</th>
+        <th>MaritalStatus</th>
+        <th>IncomeRange</th>
+        <th>Desc</th>
+        <th>Composition</th>
+        <th>Size</th>
+        <th>Children</th>
+    </tr>
+    {% for row in elem %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+        <td>{{ row[5] }}</td>
+        <td>{{ row[6] }}</td>
+        <td>{{ row[7] }}</td>
+        <td>{{ row[8] }}</td>
+        <td>{{ row[9] }}</td>
+        <td>{{ row[10] }}</td>
+        <td>{{ row[11] }}</td>
+        <td>{{ row[12] }}</td>
+        <td>{{ row[13] }}</td>
+        <td>{{ row[14] }}</td>
+        <td>{{ row[15] }}</td>
+        <td>{{ row[16] }}</td>
+        <td>{{ row[17] }}</td>
+        <td>{{ row[18] }}</td>
+    </tr>
+    {% endfor %}
+    <h1>Max Table Capacity: 5000</h1>
+</table>
+{% endblock %}

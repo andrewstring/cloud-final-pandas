@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Selection{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script>
+    alert("NOTE: The Data pulls take around 30 seconds to a minute, so click once and wait");
+    </script>
+{% endblock %}
+{% block header_title %}Welcome {{ request.args.get("uname") }}: Select an Option{% endblock %}
+{% block header %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="selection">
+    <div class="selection-item">
+        <a href="/display-10">Household Num 10 Display</a>
+    </div>
+    <div class="selection-item">
+        <a href="/display-selection">Select Household Num to Display</a>
+    </div>
+    <div class="selection-item">
+        <a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1283739777373531/3474550134137346/555317596238297/latest.html">Display Dashboard</a>
+    </div>
+    <div class="selection-item">
+        <a href="/upload-data">Upload Data</a>
+    </div>
+</div>
+{% endblock %}

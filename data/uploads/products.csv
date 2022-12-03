@@ -1,0 +1,478 @@
+PRODUCT_NUM                     ,DEPARTMENT                ,COMMODITY                 ,BRAND_TY,NATURAL_ORGANIC_FLAG
+00072499                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00074380                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00074430                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00089638                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00091659                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092520                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092522                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092523                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092875                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092879                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092883                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00092907                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093170                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093184                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093185                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093252                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093253                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093277                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093425                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093829                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093833                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00094495                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00094498                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095021                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095023                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095031                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095397                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095418                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095507                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095512                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095619                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095646                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00095778                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097179                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097181                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097230                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097355                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097589                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097601                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097821                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097872                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00097921                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098120                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098136                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098183                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098296                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098407                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098548                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098623                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098625                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098761                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00098785                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00099943                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00099955                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100007                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100046                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100047                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100253                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100429                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100453                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100489                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100494                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100584                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100770                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00100920                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+03670252                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+03670253                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+04122265                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+04122266                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+04747954                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+04805232                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06091568                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06097740                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06374984                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06379736                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06533144                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06543391                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06545412                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06547707                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06549529                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06710462                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06712997                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+06722673                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07007428                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07009801                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07042494                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07044248                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07044988                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07044989                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07047133                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07047134                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07047135                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+07047464                        ,NON-FOOD                  ,PET                       ,PRIVATE ,N
+00093991                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00100578                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00105492                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00105608                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00105611                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206021                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206045                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206077                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206087                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206093                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206318                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206321                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206424                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00206426                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00249575                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00253305                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306335                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306336                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306370                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306422                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306437                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306509                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306514                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306530                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306538                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306560                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306659                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306714                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306738                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00306754                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00351979                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00393050                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00400758                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00431687                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00431744                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00432234                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00432455                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00439309                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00514017                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00514019                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00514038                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00514039                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00638686                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00709022                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00721774                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00732179                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00732222                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766800                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766915                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766930                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766932                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766934                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766976                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766986                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00766992                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767008                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767012                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767019                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767145                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767210                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767220                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767367                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767368                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767376                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767388                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767422                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767424                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767428                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767439                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767460                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767464                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767520                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767526                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767541                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767548                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767558                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767565                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00767593                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00839849                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00839852                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00839853                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00880074                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00889073                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00889112                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00949116                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00949252                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00966686                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+00966720                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01041163                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01076662                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01076728                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01076735                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01076852                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01077087                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01098602                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01098608                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01106143                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01106393                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01106418                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01106422                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01111062                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01111080                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+01290203                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02318384                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02686788                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02686986                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02803432                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02831365                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02882261                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02950796                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+02961126                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03065377                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03065387                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03131524                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03148125                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03148133                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03148135                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03156103                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03156300                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03156302                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03672243                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03672245                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03673232                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03679758                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03679760                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03679761                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03796468                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+03816885                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04004352                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04054610                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04113461                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04181459                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04282458                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04353293                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04405312                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04465887                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04552719                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04619339                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04619340                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04619341                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04619345                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04632650                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04659540                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04690954                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04730440                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04740022                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04761815                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04762601                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04783102                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04845831                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04849078                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04950129                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04950380                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04950719                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04950917                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04959310                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04969046                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04969047                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+04981752                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05003771                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05015000                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05015053                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05033999                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05052078                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05057810                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05057814                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05057818                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05057819                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05057918                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05065194                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05083597                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05083598                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05173066                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05175930                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05224396                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05283370                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05283371                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05301622                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05304609                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05320043                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05326475                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05373790                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05381244                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05423543                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05444899                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05445044                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05446096                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05489139                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05491158                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05492075                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05494249                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05511332                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05554469                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05559304                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05608742                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05610839                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05612934                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05650366                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05691758                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05693839                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05707403                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05731235                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05737815                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05741056                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05751569                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05755688                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05756917                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05765381                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05778004                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05820153                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05824264                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05828676                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05872131                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05872224                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05874129                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05874146                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05874988                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05878634                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05881748                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05882114                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05895824                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05911781                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05913173                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05927319                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05948688                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05974519                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05990078                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+05990304                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06001428                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06003443                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06008373                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06017829                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06062577                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06073827                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06083805                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06083836                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06083864                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06089235                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06098181                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06098200                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06098201                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06098288                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06098304                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06169440                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06170870                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06210561                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06216291                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06218360                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06218373                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06229249                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06229440                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06249336                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06250149                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06252472                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06255131                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06255189                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06263885                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06279024                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06289097                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06335362                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06349305                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06421585                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06426158                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06426242                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06426252                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06438231                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06438242                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06438345                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06438359                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06438368                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06442778                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06442803                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06442841                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06462828                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06467300                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06475889                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06492988                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06495213                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06495279                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06495296                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06497113                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06522173                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06525402                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06539234                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06541061                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06541062                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06542298                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06542311                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583327                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583335                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583338                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583341                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583351                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583356                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583362                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583369                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583370                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583375                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583383                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06583389                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06606999                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06609969                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610008                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610021                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610031                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610071                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610080                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06610081                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656153                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656163                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656188                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656196                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656229                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656239                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656258                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06656260                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664018                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664082                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664097                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664106                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664116                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664117                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664127                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664138                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664148                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664149                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664157                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664168                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664174                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664175                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664184                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664190                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06664192                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06686667                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06690135                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06710012                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06723690                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06734890                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743727                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743730                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743734                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743738                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743743                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743750                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743770                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743773                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743777                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743780                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743781                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743788                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743808                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743812                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743815                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06743817                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06754237                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06757680                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06758094                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06761806                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06761817                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06761821                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06761872                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06785649                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06815910                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06815962                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06816025                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06817685                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06822533                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06822540                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06822596                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06822601                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06828894                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06828958                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06849083                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06868884                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06894542                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06894558                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06894606                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+06896492                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07042252                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07059508                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07061577                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07061938                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07061941                        ,NON-FOOD                  ,PET                       ,NATIONAL,N
+07062233                        ,NON-FOOD                  ,PET                       ,NATIONAL,N

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}House Num Selection{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block header_title %}Select an House Number to Display{% endblock %}
+{% block header %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="selection">
+    <div class="selection-item">
+        <form method="post">
+            <label for="houseNum">House Number:</label>
+            <input type="text", id="houseNum" name="houseNum"
+            value="{{ request.form['houseNum'] }}" >
+            <button type="pull">Pull</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

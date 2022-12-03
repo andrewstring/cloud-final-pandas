@@ -1,0 +1,83 @@
+.header h1 {
+    text-align: center;
+}
+
+.selection {
+    margin-top: 100px;
+    align-items: center;
+}
+
+.selection a, .selection button, .selection input {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    text-decoration: none;
+    color: black;
+}
+
+.selection label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.selection a:hover, .selection button:hover {
+    background-color: grey;
+}
+
+.selection button {
+    width: 100px;
+}
+
+.auth-form {
+    text-align: center;
+}
+
+.auth-form form {
+    display: inline-block;
+}
+
+.auth-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form form input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.upload {
+    text-align: center;
+}
+
+.upload form {
+    display: inline-block;
+}
+
+.upload form label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.upload form input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+}
