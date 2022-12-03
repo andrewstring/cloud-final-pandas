@@ -68,7 +68,7 @@ def display_selection():
 @app.route("/display-selected-num")
 def display_selected_num():
     print(request.args.get("num"))
-    elements = run(request.args.get("num"))
+    elements = run(int(request.args.get("num")))
     return render_template("/display/display-table.html", elem=elements, num=request.args.get("num"))
 
 
