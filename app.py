@@ -52,7 +52,7 @@ def selection():
 
 @app.route("/display-10")
 def display_ten():
-    elements = run()
+    elements = run(10)
     print(elements)
     return render_template("/display/display-table.html", elem=elements, num=10)
 
@@ -67,7 +67,8 @@ def display_selection():
 
 @app.route("/display-selected-num")
 def display_selected_num():
-    elements = run(sparkContext, request.args.get("num"))
+    print(request.args.get("num"))
+    elements = run(request.args.get("num"))
     return render_template("/display/display-table.html", elem=elements, num=request.args.get("num"))
 
 

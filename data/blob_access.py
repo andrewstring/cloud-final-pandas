@@ -15,17 +15,20 @@ def get_three_df(urls, schemas):
     return three_df
 
 def get_joined_df(pd_df_arr):
-    return pd.concat(
-    pd_df_arr,
-    axis=0,
-    join="outer",
-    ignore_index=False,
-    keys=None,
-    levels=None,
-    names=None,
-    verify_integrity=False,
-    copy=True,
-    )
+    # return pd.concat(
+    # pd_df_arr,
+    # axis=0,
+    # join="outer",
+    # ignore_index=False,
+    # keys=None,
+    # levels=None,
+    # names=None,
+    # verify_integrity=False,
+    # copy=True,
+    # )
+    first_join = pd_df_arr[2].merge(pd_df_arr[0], how="inner", on="HouseholdNum")
+    second_join = first_join.merge(pd_df_arr[1], how="inner", on="ProductNum")
+    return second_join
 
     
 
@@ -41,7 +44,7 @@ def get_joined_df(pd_df_arr):
 #     transactions_df = sqlContext.createDataFrame(transactions_pd_df, schema=sparkSchemas[2])
 #     return [household_df, products_df, transactions_df]
 
-def run():
+def run(num):
 
     # householdSchema = StructType([
     #     StructField("HouseholdNum", IntegerType(), True),
@@ -134,10 +137,10 @@ def run():
 
     joined_df = get_joined_df(get_three_df(urls, schemas))
     joined_df["HouseholdNum"] = pd.to_numeric(joined_df["HouseholdNum"])
-    filtered_df = joined_df[(joined_df.HouseholdNum == 10)]
+    filtered_df = joined_df[(joined_df.HouseholdNum == num)]
     table = filtered_df[["HouseholdNum","BasketNum","Date","ProductNum","Department","Commodity","Spend","Units",
     "StoreRegion", "WeekNum", "Year", "Loyalty", "AgeRange", "Marital", "IncomeRange", "Homeowner", "Composition",
-    "Size", "Children"]]
+    "Size", "Children"]].sort_values(by=["BasketNum", "Date", "ProductNum", "Department", "Commodity"])
 
     print(table)
     return table.head(5000).values.tolist()
@@ -220,4 +223,4 @@ if __name__ == "__main__":
     # combined = run_file(sparkContext, ["households.csv", "products.csv", "transactions.csv"], 1600)
     # print(combined[0:10])
 
-    run()
+    run(10)
